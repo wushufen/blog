@@ -6,4 +6,4 @@ Uglify, YUI, JsMin 都是如此。
 
 ## 解决方法
 1. 把`eval`调用改为`window.eval`用 Uglify 压缩可以神奇的避免这个情况。 YUI, JsMin 仍然不行。
-2. 用`new Function()`代替
+2. 用`new Function()`代替。JsMin 仍然不行。
