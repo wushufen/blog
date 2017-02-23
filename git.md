@@ -1,8 +1,18 @@
 # git
 
-## clone 从仓库克隆代码
+## clone 从仓库克隆
 ```
 git clone git@weili:/wd.git
+```
+
+## init 新建
+```
+git init
+```
+
+## remote add origin 服务器地址
+```
+git remote add origin git@xxx/xxx.git
 ```
 
 ## add 添加文件
@@ -15,12 +25,12 @@ git add *.html
 git commit -m 'msg'
 ```
 
-## push 推送到仓库
+## push 推送到服务器
 ```
 git push -u origin master
 ```
 
-## pull 从仓库拉下
+## pull 从服务器拉下
 ```
 git pull origin master
 ```
