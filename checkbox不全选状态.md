@@ -1,0 +1,3 @@
+```javascript
+checkbox.indeterminate = true
+````
