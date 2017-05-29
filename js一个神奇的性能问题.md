@@ -27,4 +27,4 @@ console.timeEnd(3)
 2: 4427.729ms
 3: 1.169ms
 ```
-为什么第二次如此之慢？？
+为什么第二次如此之慢？？ (chrome, node.js)
