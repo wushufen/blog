@@ -1,20 +1,33 @@
 ```javascript
-console.log(new Date('2012/12/12'))
-console.log(new Date('2012/12/2'))
-console.log(new Date('2012/12/02'))
+console.log(new Date('2011/12/13'))
+console.log(new Date('2111/12/3'))
+console.log(new Date('2211/12/03'))
 
-console.log(new Date('2012-12-12')) // 这个会自动加8h
-console.log(new Date('2012-12-2'))
-console.log(new Date('2012-12-02')) // 这个会自动加8h
-console.log(new Date('2012-12-02 00:00:00'))  // 这个 ios 会无效
+console.log(new Date('2311-12-13')) // 这个会自动加 8h
+console.log(new Date('2411-12-3'))
+console.log(new Date('2511-12-03')) // 这个会自动加 8h
+console.log(new Date('2611-12-03 14:15:16')) // 这个 ios 会无效
+
+console.log(new Date('111/12/13'))
+console.log(new Date('222-12-13'))
+
+console.log(new Date('11/12/13')) // 如果都为2位，最后的会当成年份 +2000
+console.log(new Date('11-12-14')) // 如果都为2位，最后的会当成年份 +2000
+
+console.log(new Date(10, 11, 12)) // 如果第1为2位，会 +1900 （有的浏览器 >50 +1900, <50 +2000），第2从0开始为1月
 ```
 
 ```
-VM389:1 Wed Dec 12 2012 00:00:00 GMT+0800 (中国标准时间)
-VM389:2 Sun Dec 02 2012 00:00:00 GMT+0800 (中国标准时间)
-VM389:3 Sun Dec 02 2012 00:00:00 GMT+0800 (中国标准时间)
-VM389:5 Wed Dec 12 2012 08:00:00 GMT+0800 (中国标准时间)
-VM389:6 Sun Dec 02 2012 00:00:00 GMT+0800 (中国标准时间)
-VM389:7 Sun Dec 02 2012 08:00:00 GMT+0800 (中国标准时间)
-VM389:8 Sun Dec 02 2012 00:00:00 GMT+0800 (中国标准时间)
+2011-12-13 00:00:00
+2111-12-03 00:00:00
+2211-12-03 00:00:00
+2311-12-13 08:00:00
+2411-12-03 00:00:00
+2511-12-03 08:00:00
+2611-12-03 14:15:16
+0111-12-13 00:00:00
+0222-12-13 00:00:00
+2013-11-12 00:00:00
+2014-11-12 00:00:00
+1910-12-12 00:00:00
 ```
