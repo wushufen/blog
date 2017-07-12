@@ -43,3 +43,7 @@ console.log(new Date(10, 11, 12)) // 如果第1为2位，会 +1900 ，第2从0�
 
 1910-12-12 00:00:00
 ```
+
+
+## 链接
+http://dygraphs.com/date-formats.html
