@@ -35,6 +35,12 @@ git push -u origin master
 git pull origin master
 ```
 
+## 恢复某文件（夹）到之前版本
+```
+git checkout b4f4ebcfabe03eabf454540d32c00a0106ac6575 .\static\
+```
+
+
 ## ssh
 ### 生成密钥对
 ```
