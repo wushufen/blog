@@ -57,5 +57,12 @@ Host weili
     identityfile ~/.ssh/私钥名
 ```
 
+## 问题
+### early EOF
+http://blog.csdn.net/djy1992/article/details/50604937
+
+### 检出指定目录或文件
+http://www.cnblogs.com/liangzai-cool/p/5821138.html
+
 ## links 链接
 https://try.github.io/levels/1/challenges/1
