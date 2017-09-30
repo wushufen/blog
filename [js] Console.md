@@ -1,4 +1,5 @@
-## 样式（颜色，大小，图片等都可以）
+## 样式
+颜色，大小，图片等都可以
 ```javascript
 console.log('%c green %c red', 'color:green', 'color:red')
 ```
