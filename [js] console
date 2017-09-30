@@ -20,11 +20,13 @@ console.groupEnd('g1')
 ```
 
 ## 以表格形式打印数组
+控制台下可以直接 table()
 ```javascript
 console.table([{id:1,name:'n1'},{id:2,name:'n2'}])
 ```
 
 ## 以目录形式打印对象
+控制台下可以直接 dir()
 ```javascript
 console.dir([{id:1,name:'n1'},{id:2,name:'n2'}])
 ```
