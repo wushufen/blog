@@ -1,6 +1,6 @@
 ```css
 .png9-dialog {
-  border-image: url(map.png) 49% fill / auto
+  border-image: url(dialog.png) 49% fill / auto
 }
 ```
 
