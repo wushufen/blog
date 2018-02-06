@@ -26,13 +26,23 @@ git commit -m 'msg'
 ```
 
 ## push 推送到服务器
+第一次指定分支
 ```
 git push -u origin master
 ```
+第二次
+```
+git push
+```
 
 ## pull 从服务器拉下
+第一次指定分支
 ```
 git pull origin master
+```
+第二次
+```
+git pull
 ```
 
 ## 恢复某文件（夹）到之前版本
