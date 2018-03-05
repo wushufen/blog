@@ -56,15 +56,30 @@ git checkout b4f4ebcfabe03eabf454540d32c00a0106ac6575 .\static\
 ```
 ssh-keygen -t rsa -C "your_email@youremail.com"
 ```
-公钥`xx.pub`放服务器，私钥放 `c:/user/xxx/.ssh`
+生成  
+`c:/user/xxx/.ssh/私钥名`  
+`c:/user/xxx/.ssh/私钥名.pub`  
+私钥名可改  
+公钥`私钥名.pub`放服务器
 
 ### config
+新建`c:/user/xxx/.ssh/config`文件
 ```
-Host weili
-    HostName 112.33.1.20
+Host 配置1
+    HostName 112.33.1.20
+    User git
+    identityfile ~/.ssh/私钥名
+    
+Host 配置2
+    HostName 112.33.1.20
     User git
     Port 8000
     identityfile ~/.ssh/私钥名
+```
+
+### git clone
+```
+git clone git@配置1:path/to/xxx.git
 ```
 
 ## 问题
