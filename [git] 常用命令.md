@@ -45,6 +45,16 @@ git pull origin master
 git pull
 ```
 
+## branch 新建或切换本地分支
+```
+git branch dev
+```
+将新建的本地分推送到服务器
+```
+git push -u origin dev
+```
+
+
 ## 恢复某文件（夹）到之前版本
 ```
 git checkout b4f4ebcfabe03eabf454540d32c00a0106ac6575 .\static\
