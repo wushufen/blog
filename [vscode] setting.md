@@ -6,7 +6,7 @@
   "window.zoomLevel": 0,
   "editor.tabSize": 2,
   // "editor.formatOnSave": true,
-  "vetur.format.defaultFormatter.html": "js-beautify-html",
+  "vetur.format.defaultFormatter.html": "js-beautify-html",  // vue文件格式化时，对html部分格式化
   "editor.mouseWheelZoom": true,
   "editor.smoothScrolling": true,
   "[vue]": {
