@@ -32,3 +32,36 @@
   -webkit-overflow-scrolling: touch; // <------------==
 }
 ```
+
+### ios -webkit-overflow-scrolling: touch 动态添加内容溢出时，容器无法滑动内容
+overflow:scroll 
+
+解决
+通过css使用内容高度超过容器高度
+```css
+.outer {
+    height: 350px;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+.outer:before {
+    content:"";
+    float: left;
+    height: calc(100% + 1px);
+    width: 1px;
+    margin-left: -1px;
+}
+```
+```css
+.outer {
+  height: 350px;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.inner {
+  height: calc(100% + 1px);
+}
+```
+https://www.cnblogs.com/xiahj/p/8036419.html
+
