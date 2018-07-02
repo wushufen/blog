@@ -54,6 +54,12 @@ git branch dev
 git push -u origin dev
 ```
 
+## branch 合并分支
+将A合并到当前
+```
+git merge A
+```
+
 
 ## 恢复某文件（夹）到之前版本
 ```
