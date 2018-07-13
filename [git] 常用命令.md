@@ -110,3 +110,6 @@ https://try.github.io/levels/1/challenges/1
 
 分支创建与合并
 https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/001375840038939c291467cc7c747b1810aab2fb8863508000
+
+Git合并指定文件到另一个分支
+https://www.cnblogs.com/phpper/p/7609238.html
