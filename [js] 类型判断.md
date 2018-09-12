@@ -38,4 +38,9 @@ typeof value // object
 // *
 Object.prototype.toString.call(value) // "[object _Type_]"
 
+// typeOf
+function typeOf(value){
+    return toString.call(value).slice(8, -1).toLowerCase()
+}
+
 ```
