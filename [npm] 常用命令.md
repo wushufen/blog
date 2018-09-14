@@ -26,6 +26,11 @@ npm版本
 npm -v
 ```
 
+更新npm
+```
+npm i -g npm
+```
+
 查看npmjs服务器上的模块信息
 ```
 npm view pack version
