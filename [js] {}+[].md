@@ -6,7 +6,7 @@
 ```javascript
 +[]
 ```
-等同于
+以下等同
 ```javascript
 eval('{}+[]')
 ```
@@ -14,6 +14,8 @@ eval('{}+[]')
 如果将该语句，放于表达式环境中时，会将 {} 解析为对象
 ```javascript
 ({})+[]
+// 或者
+result = {}+[]
 ```
 结果为 `"[object Object]"`
 
