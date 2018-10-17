@@ -33,12 +33,12 @@ npm i -g npm
 
 查看npmjs服务器上的模块信息
 ```
-npm view pack version
-npm view pack versions
+npm view packName version
+npm view packName versions
 ```
 
 查看本地模块信息
 ```
-npm ls pack
-npm ls pack -g
+npm ls packName
+npm ls packName -g
 ```
