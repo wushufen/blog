@@ -29,7 +29,7 @@
 ```css
 .el{
   overflow: auto;
-  -webkit-overflow-scrolling: touch; // <------------==
+  -webkit-overflow-scrolling: touch; // <------------== 20181226 将其移至 html
 }
 ```
 
@@ -37,6 +37,13 @@
 overflow:scroll 
 
 解决
+
+20181226:  将其移至 html
+```css
+html{-webkit-overflow-scrolling: touch}
+```
+
+
 通过css使用内容高度超过容器高度
 ```css
 .outer {
