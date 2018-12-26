@@ -38,7 +38,7 @@ overflow:scroll
 
 解决
 
-20181226:  将其移至 html
+20181226:  将其移至 html 即可。但有时还是有无法滚动和内容消失的情况出现
 ```css
 html{-webkit-overflow-scrolling: touch}
 ```
