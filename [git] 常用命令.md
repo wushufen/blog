@@ -60,6 +60,16 @@ git push -u origin dev
 git merge A
 ```
 
+## branch 删除分支
+删除本地分支
+```
+git branch -D br
+```
+删除远程分支
+```
+git push origin :br
+```
+
 
 ## 恢复某文件（夹）到之前版本
 ```
