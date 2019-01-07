@@ -45,13 +45,22 @@ git pull origin master
 git pull
 ```
 
-## branch 新建或切换本地分支
+## branch 新建分支
+查看所有分支
+```
+git branch -a
+```
+新建分支
 ```
 git branch dev
 ```
-将新建的本地分推送到服务器
+将分支推送到服务器
 ```
 git push -u origin dev
+```
+新建并切换分支
+```
+git checkout -b dev
 ```
 
 ## branch 合并分支
