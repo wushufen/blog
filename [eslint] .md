@@ -11,7 +11,7 @@ npm i eslint-plugin-vue -g
 ## run
 ```
 eslint file
-``
+```
 --fix
 ```
 eslint file --fix
