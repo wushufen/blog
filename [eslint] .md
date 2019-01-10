@@ -42,7 +42,7 @@ module.exports = {
   "rules": {
     // 缩进2空格
     "indent": [
-      2,
+      1,
       2
     ],
     // 分号
@@ -71,7 +71,7 @@ module.exports = {
     "object-property-newline": [
       1,
       {
-        // 允许全部一行（要么全换行，要么全不换行）
+        // 允许全部一行。（要么全换行，要么全不换行）
         "allowMultiplePropertiesPerLine": true
       }
     ],
@@ -85,8 +85,15 @@ module.exports = {
         // "keywords": true
       }
     ],
+    // 同名属性
+    "no-dupe-keys": 1,
     // ===
-    "eqeqeq": 1
+    "eqeqeq": 1,
+    // console.xxx
+    "no-console": [
+      1,
+      { "allow": ["warn", "error"] }
+    ]
   },
   "globals": {}
 }
