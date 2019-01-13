@@ -1,0 +1,3 @@
+fetch
+XDomainRequest
+cors
