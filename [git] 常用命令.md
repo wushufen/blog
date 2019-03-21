@@ -181,3 +181,34 @@ t2 <---|<--|<--------------|
 
 
 ```
+
+```
+1. 开始开发
+git checkout -b branchName
+
+2. 提测修bug
+git merge origin/master
+
+3. 测完合并（重点！）
+git checkout master
+git pull
+git merge branchName
+git push
+
+4. 处理冲突（若有）
+git add .
+git commit -m 'msg'
+git push
+
+5. 回归测试
+
+5. 打标签
+git tag tagName
+git push origin tagName
+
+6. 提审（记住打完标签再提，已免忘了）
+
+7. 删除分支
+git branch -d branchName
+git push origin :branchName
+```
