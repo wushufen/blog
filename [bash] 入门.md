@@ -82,6 +82,12 @@ c
 rs=$(echo "$v" | egrep "a|c")
 ```
 
+## xargs
+有些命令不能接收管道的参数，可通过`xargs`来传递
+```bash
+echo "js.js" | xargs eslint --fix
+```
+
 ## exit
 退出。正常退出`exit 0`，非常正常退出返回非0。
 
