@@ -39,6 +39,12 @@ git add .
 
 ```
 
+## $?
+上一命令的退出码。0为正常退出，非0为异常退出。
+```bash
+echo $?
+```
+
 ## 运行命令，把输出返回给变量
 ```bash
 string=$(git diff --cached --name-only)
