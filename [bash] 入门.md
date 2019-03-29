@@ -85,6 +85,7 @@ echo $?
 ## if
 ```bash
 if [[  ]]; then
+elif [[  ]]; then
 else
 fi
 ```
