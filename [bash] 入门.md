@@ -20,6 +20,11 @@ string
 v4="$v1${v2}abc"
 ```
 
+## 字符串替换
+```bash
+string=${string//a/b}
+```
+
 ## echo 输出
 ```bash
 echo $v3 # 不加双引号，输出换行会变成空格
@@ -106,6 +111,12 @@ rs=$(echo "$v" | egrep "a|c")
 有些命令不能接收管道的参数，可通过`xargs`来传递
 ```bash
 echo "js.js" | xargs eslint --fix
+```
+
+## command
+判断命令是否存在
+```bash
+command -v eslint
 ```
 
 ## exit
