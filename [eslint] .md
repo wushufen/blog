@@ -112,7 +112,10 @@ exts: ESlint Vetur
   "eslint.validate": [
     "javascript",
     "html",
-    "vue"
+    {
+      "language": "vue",
+      "autoFix": true,
+    }
   ],
   "eslint.autoFixOnSave": true,
   "vetur.format.defaultFormatter.js": "prettier-eslint",
