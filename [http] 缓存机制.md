@@ -21,20 +21,10 @@ HTTP响应头
     no-store:       绝对禁止缓存
 ```
 
-## 文件是否已修改
-(2) 优先于 (1)
+## 协商缓存判断文件是否已修改
+(1) 优先于 (2)
 
-### (1) Last-modified == If-Modified-Since ? 304 : 200
-```
-HTTP请求头
-If-Modified-Since:  上次修改时间
-```
-```
-HTTP响应头
-Last-modified:      修改时间
-```
-
-### (2) Etag == If-None-Match ? 304 : 200
+### (1) If-None-Match == Etag ? 304 : 200
 ```
 HTTP请求头
 If-None-Match:      文件指纹
@@ -42,6 +32,16 @@ If-None-Match:      文件指纹
 ```
 HTTP响应头
 Etag:               文件指纹（md5或其它）
+```
+
+### (2) If-Modified-Since == Last-modified ? 304 : 200
+```
+HTTP请求头
+If-Modified-Since:  上次修改时间
+```
+```
+HTTP响应头
+Last-modified:      修改时间
 ```
 
 ## chrome 查看缓存文件信息
