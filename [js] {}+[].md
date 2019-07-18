@@ -32,3 +32,30 @@ result = {}+[]
     * 2.1.2 否：-> 3
   * 2.2 否：-> 3
 * 3 报错
+
+```javascript
+1 + (function(obj){
+    // return obj
+
+    var value = obj
+
+    if(value !== Object(value)) return value
+
+    if(typeof obj.valueOf == 'function'){
+      value = obj.valueOf()
+      if(value !== Object(value)) return value
+    }
+
+    if(typeof obj.toString == 'function'){
+      value = obj.toString()
+      if(value !== Object(value)) return value
+    }
+
+    throw TypeError('Cannot convert object to primitive value')
+
+})({
+    valueOf(){return {}},
+    toString(){return {}}
+})
+
+```
