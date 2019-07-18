@@ -21,17 +21,10 @@ result = {}+[]
 
 
 ## 非基本类型进行运算
-* 1 value.valueOf 是否函数？
-  * 1.1 是：返回值为基本类型？
-    * 1.1.1 是：用返回值参与运算
-    * 1.1.2 否：-> 2
-  * 1.2. 否：-> 2
-* 2 value.toString 是否函数？
-  * 2.1 是：返回为基本类型？
-    * 2.1.1 是：用返回值参与运算
-    * 2.1.2 否：-> 3
-  * 2.2 否：-> 3
-* 3 报错
+
+非基本类型进行运算，
+会判断 `valueOf` `toString` 是否返回基本类型，是则用来参与运算，否则报错。
+相当于经过以下步骤：
 
 ```javascript
 1 + (function(obj){
@@ -54,8 +47,8 @@ result = {}+[]
     throw TypeError('Cannot convert object to primitive value')
 
 })({
-    valueOf(){return {}},
-    toString(){return {}}
+    valueOf(){console.log('valueOf'); return {}},
+    toString(){console.log('toString'); return {}}
 })
 
 ```
