@@ -22,8 +22,12 @@ eslint file --fix
 ```javascript
 module.exports = {
   "parserOptions": {
-    // 支持 es6 模块
-    "sourceType": "module"
+    // es6, jsx
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+        "jsx": true
+    }
   },
   // 运行环境
   "env": {
@@ -36,9 +40,6 @@ module.exports = {
   ],
   "extends": [
     "eslint:recommended",
-    /*
-     * eslint-plugin-vue
-     */
     // "plugin:vue/base",
     "plugin:vue/essential",
     // "plugin:vue/recommended",
