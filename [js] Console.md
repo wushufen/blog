@@ -1,7 +1,7 @@
 ## 样式
-颜色，大小，图片等都可以
+颜色，字体，背景图片等都可以
 ```javascript
-console.log('%c green %c red', 'color:green', 'color:red')
+console.log('%c hello %c world %c!', 'background:gray; color:#fff; border-radius:3px', 'color:#0af', 'color:red')
 ```
 
 ## 函数调用路径
