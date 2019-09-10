@@ -1,4 +1,8 @@
 新建 `~/.bash_profile`
+```bash
+cd ~
+touch .bash_profile
+```
 
 添加
 ```bash
