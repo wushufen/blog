@@ -85,6 +85,11 @@ git push origin :br
 git checkout b4f4ebcfabe03eabf454540d32c00a0106ac6575 .\static\
 ```
 
+## 忽略已添加到版本库的文件
+```
+$ git rm -r -f --cached **/node_modules/
+```
+
 
 ## ssh
 ### 生成密钥对
@@ -125,6 +130,10 @@ http://blog.csdn.net/djy1992/article/details/50604937
 http://www.cnblogs.com/liangzai-cool/p/5821138.html
 
 ## links 链接
+
+手册
+https://github.github.com/training-kit/downloads/zh_CN/github-git-cheat-sheet/
+
 https://try.github.io/levels/1/challenges/1
 
 分支创建与合并
