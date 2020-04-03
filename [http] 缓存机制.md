@@ -27,9 +27,9 @@ HTTP响应头
   date:             响应时 服务器时间
   expires:          Http1.0 标准，写明过期时间（服务器），可能与客户端有偏差
   Cache-Control:    Http1.1 标准
-    max-age:        过期时长（秒）， date + max-age 为过期时间，优先于 expires
-    no-cache:       向服务器确认资源是否被更改
-    no-store:       绝对禁止缓存
+    no-cache,       向服务器确认资源是否被更改
+    no-store,       绝对禁止缓存
+    max-age=        过期时长（秒）， date + max-age 为过期时间，优先于 expires
 ```
 
 ## 协商缓存判断文件是否已修改
