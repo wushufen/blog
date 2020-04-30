@@ -42,3 +42,13 @@ npm view packName versions
 npm ls packName
 npm ls packName -g
 ```
+
+登录
+```
+npm login
+```
+
+发布
+```
+npm pubilsh
+```
