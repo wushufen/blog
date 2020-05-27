@@ -59,7 +59,7 @@ module.exports = {
     // 尾空格
     "no-trailing-spaces": [1],
     // 多空行
-    "no-multiple-empty-lines": [1, { max: 3 }],
+    "no-multiple-empty-lines": [1, { "max": 3 }],
     // 引号
     "quotes": [1, "single"],
     // 对象属性尾逗号
