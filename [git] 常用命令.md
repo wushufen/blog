@@ -90,6 +90,10 @@ git checkout b4f4ebcfabe03eabf454540d32c00a0106ac6575 .\static\
 $ git rm -r -f --cached **/node_modules/
 ```
 
+## 配置文件
+全局： `~/.gitconfig`
+本地： `.git/config`
+
 
 ## ssh
 ### 生成密钥对
