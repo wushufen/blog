@@ -9,6 +9,9 @@ console.log(new Date('5011-12-3'))
 console.log(new Date('6011-12-03')) // 这个会自动加 8h
 console.log(new Date('7011-12-03 14:15:16')) // 这个 ios 会无效
 
+console.log(new Date('2020/06'))  // 这个 ios 会无效
+console.log(new Date('2020-06'))  // 这个 ios 会无效
+
 console.log(new Date('111/12/13'))
 console.log(new Date('222-12-13'))
 
