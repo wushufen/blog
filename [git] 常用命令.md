@@ -24,6 +24,10 @@ git add *.html
 ```
 git commit -m 'msg'
 ```
+## 修改最近commit
+```
+git commit --amend
+```
 
 ## push 推送到服务器
 第一次指定分支
