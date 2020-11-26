@@ -28,6 +28,10 @@ git commit -m 'msg'
 ```
 git commit --amend
 ```
+## 撤消上次提交记录，不恢复代码
+```
+ git reset --soft HEAD~1
+```
 
 ## push 推送到服务器
 第一次指定分支
