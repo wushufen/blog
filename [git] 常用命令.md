@@ -52,6 +52,10 @@ git pull origin master
 ```
 git pull
 ```
+允许没有相同提交记录的仓库关联
+```
+git pull origin master --allow-unrelated-histories
+```
 
 ## branch 新建分支
 查看所有分支
