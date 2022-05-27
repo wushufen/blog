@@ -97,6 +97,11 @@ git push origin :br
 git checkout b4f4ebcfabe03eabf454540d32c00a0106ac6575 .\static\
 ```
 
+## 添加已忽略的文件
+```
+$ git add -f ./package-lock.json
+```
+
 ## 忽略已添加到版本库的文件
 ```
 $ git rm -r -f --cached **/node_modules/
